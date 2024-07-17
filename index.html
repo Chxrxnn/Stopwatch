@@ -153,7 +153,15 @@
             {
                 ten.innerHTML=Tens;
             }
-            
+            if(Tens>99)
+            {
+                Seconds++;
+                Tens=0;
+                ten.innerHTML="0"+0;
+            }
+            if(Seconds<=9 && Seconds!=="00"){
+                sec.innerHTML="0"+Seconds;
+            }
             if(Seconds>9)
             {
               sec.innerHTML=Seconds;
@@ -186,13 +194,7 @@
             }
 
             
-            if(Tens>99)
-            {
-                Seconds++;
-                sec.innerHTML='0'+ Seconds;
-                Tens=0;
-                ten.innerHTML="0"+0;
-            }
+            
 
 
             
